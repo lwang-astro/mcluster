@@ -3095,7 +3095,7 @@ double dfridr(double (*func)(double, double*), double x, double h, double *err, 
 	
 	int i,j;
 	double errt,fac,hh,ans = 0;
-	double a[10][10];
+	double a[11][11];
 	
 	double arg1, arg2;
 	
@@ -3276,6 +3276,7 @@ double rhoR (double x, double *p) {	//user-defined 2d-density profile
 double rho(double r, double *p) { 
 	int j = 0;
 	double s,st,ost,os,stemp;
+	p[0] = r;
 	if (r < p[2]) {
 		ost = os = -1.0e30;
 		for (j=1;j<=JMAX;j++) {
