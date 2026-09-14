@@ -1197,7 +1197,7 @@ int main (int argv, char **argc) {
 
 		for (j=0; j<N; j++) {
 			for (i=4;i<7;i++)
-				star[j][i] *= rvir/tscale;
+				star[j][i] *= sqrt(2*Q)*rvir/tscale;
 		}
 		bin = -1; //KZ(22)
 	} else {
